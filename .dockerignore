@@ -1,0 +1,17 @@
+.venv
+.git
+.bob
+.shots
+.pytest_cache
+**/__pycache__
+**/*.pyc
+**/*.bak
+**/screen.png
+docs
+tests
+data
+sql
+infra
+ml/*.py
+README.md
+.env

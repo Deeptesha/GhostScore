@@ -1,0 +1,611 @@
+{
+  "_synthetic": true,
+  "_disclaimer": "This is a synthetic demo persona. Amounts are calibrated against NPCI UPI statistics but are not real transactions. Score illustrates the product; no India-specific accuracy is claimed.",
+  "persona_id": "priya_sharma",
+  "name": "Priya Sharma",
+  "occupation": "Tea stall operator",
+  "location": "Pune, Maharashtra",
+  "monthly_income_range": "INR 8,000-14,000",
+  "documents": [
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "May 2026",
+      "amount_inr": 831.47,
+      "due_date": "2026-05-15",
+      "paid_date": "2026-05-12",
+      "on_time": true,
+      "confidence": 0.929
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "Jun 2026",
+      "amount_inr": 864.89,
+      "due_date": "2026-06-15",
+      "paid_date": "2026-06-15",
+      "on_time": true,
+      "confidence": 0.957
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "Jul 2026",
+      "amount_inr": 869.59,
+      "due_date": "2026-07-15",
+      "paid_date": "2026-07-12",
+      "on_time": true,
+      "confidence": 0.94
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "Aug 2026",
+      "amount_inr": 898.21,
+      "due_date": "2026-08-15",
+      "paid_date": "2026-08-12",
+      "on_time": true,
+      "confidence": 0.945
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "Sep 2026",
+      "amount_inr": 895.53,
+      "due_date": "2026-09-15",
+      "paid_date": "2026-09-12",
+      "on_time": true,
+      "confidence": 0.955
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "MSEDCL",
+      "period": "Oct 2026",
+      "amount_inr": 788.78,
+      "due_date": "2026-10-15",
+      "paid_date": "2026-10-12",
+      "on_time": true,
+      "confidence": 0.951
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "May 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-05-01",
+      "paid_date": "2026-05-01",
+      "on_time": true,
+      "confidence": 0.931
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "Jun 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-06-01",
+      "paid_date": "2026-06-01",
+      "on_time": true,
+      "confidence": 0.92
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "Jul 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-07-01",
+      "paid_date": "2026-07-01",
+      "on_time": true,
+      "confidence": 0.946
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "Aug 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-08-01",
+      "paid_date": "2026-08-01",
+      "on_time": true,
+      "confidence": 0.884
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "Sep 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-09-01",
+      "paid_date": "2026-09-01",
+      "on_time": true,
+      "confidence": 0.935
+    },
+    {
+      "type": "rent_receipt",
+      "landlord": "Suresh Patil",
+      "period": "Oct 2026",
+      "amount_inr": 5500.0,
+      "due_date": "2026-10-01",
+      "paid_date": "2026-10-01",
+      "on_time": true,
+      "confidence": 0.91
+    }
+  ],
+  "upi_events": [
+    {
+      "date": "2026-05-13",
+      "amount_inr": 401.11,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-18",
+      "amount_inr": 272.45,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-28",
+      "amount_inr": 499.71,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-19",
+      "amount_inr": 273.71,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-08",
+      "amount_inr": 409.65,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-03",
+      "amount_inr": 384.73,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-15",
+      "amount_inr": 498.43,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-27",
+      "amount_inr": 332.69,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-09",
+      "amount_inr": 363.6,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-22",
+      "amount_inr": 479.92,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-18",
+      "amount_inr": 573.51,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-08",
+      "amount_inr": 493.89,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-21",
+      "amount_inr": 327.47,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-18",
+      "amount_inr": 442.36,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-25",
+      "amount_inr": 327.8,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-08",
+      "amount_inr": 208.35,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-03",
+      "amount_inr": 461.2,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-19",
+      "amount_inr": 305.67,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-21",
+      "amount_inr": 452.84,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-05",
+      "amount_inr": 557.26,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-18",
+      "amount_inr": 546.81,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-24",
+      "amount_inr": 572.56,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-12",
+      "amount_inr": 276.96,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-05",
+      "amount_inr": 489.04,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-28",
+      "amount_inr": 218.67,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-05",
+      "amount_inr": 428.21,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-20",
+      "amount_inr": 517.15,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-13",
+      "amount_inr": 573.04,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-09",
+      "amount_inr": 308.91,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-28",
+      "amount_inr": 343.59,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-18",
+      "amount_inr": 394.89,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-11",
+      "amount_inr": 366.4,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-01",
+      "amount_inr": 400.99,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-24",
+      "amount_inr": 487.8,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-17",
+      "amount_inr": 620.15,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-28",
+      "amount_inr": 384.27,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-20",
+      "amount_inr": 368.66,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-05",
+      "amount_inr": 583.41,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-25",
+      "amount_inr": 431.73,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-01",
+      "amount_inr": 271.05,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-12",
+      "amount_inr": 409.31,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-08",
+      "amount_inr": 441.26,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-03",
+      "amount_inr": 428.9,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-24",
+      "amount_inr": 575.08,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-18",
+      "amount_inr": 553.61,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-05",
+      "amount_inr": 116.6,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-09",
+      "amount_inr": 270.22,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-28",
+      "amount_inr": 443.45,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-18",
+      "amount_inr": 346.68,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-23",
+      "amount_inr": 458.45,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-12",
+      "amount_inr": 275.77,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-17",
+      "amount_inr": 526.19,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-11",
+      "amount_inr": 482.04,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-19",
+      "amount_inr": 479.0,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-03",
+      "amount_inr": 430.55,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-21",
+      "amount_inr": 503.98,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-28",
+      "amount_inr": 454.38,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-03",
+      "amount_inr": 678.34,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-07",
+      "amount_inr": 433.44,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-05",
+      "amount_inr": 597.93,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-16",
+      "amount_inr": 340.53,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-07",
+      "amount_inr": 378.74,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-14",
+      "amount_inr": 524.53,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-15",
+      "amount_inr": 492.91,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-21",
+      "amount_inr": 584.68,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-02",
+      "amount_inr": 478.32,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-04",
+      "amount_inr": 390.59,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-07",
+      "amount_inr": 206.52,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-06",
+      "amount_inr": 355.75,
+      "merchant": "PhonePe recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-15",
+      "amount_inr": 405.09,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-26",
+      "amount_inr": 453.49,
+      "merchant": "Small supplier",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-04",
+      "amount_inr": 386.3,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-01",
+      "amount_inr": 333.67,
+      "merchant": "Kirana store",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-25",
+      "amount_inr": 297.74,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-07",
+      "amount_inr": 489.45,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-02",
+      "amount_inr": 539.68,
+      "merchant": "Vegetable vendor",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-09",
+      "amount_inr": 167.4,
+      "merchant": "Electricity prepaid",
+      "type": "upi_debit"
+    }
+  ],
+  "features": {
+    "payment_consistency": 1.0,
+    "income_stability": 0.619,
+    "spending_discipline": 0.72,
+    "digital_footprint": 0.38,
+    "rental_reliability": 1.0,
+    "pay_streak": 1.0,
+    "avg_pay_ratio": 0.95,
+    "bill_variance": 0.18,
+    "inflow_regularity": 0.65,
+    "max_pay_gap": 0.0,
+    "limit_utilization": 0.45,
+    "months_data": 1.0
+  },
+  "expected_band": "Fair",
+  "expected_score": 640
+}

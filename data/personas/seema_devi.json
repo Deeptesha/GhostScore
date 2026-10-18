@@ -1,0 +1,238 @@
+{
+  "_synthetic": true,
+  "_disclaimer": "Synthetic demo persona \u2014 not real transactions. Score illustrates the product; no India-specific accuracy is claimed.",
+  "persona_id": "seema_devi",
+  "name": "Seema Devi",
+  "occupation": "Seasonal agricultural worker",
+  "location": "Sitamarhi, Bihar",
+  "monthly_income_range": "INR 3,000-8,000 (seasonal)",
+  "documents": [
+    {
+      "type": "electricity_bill",
+      "biller": "BSPHCL",
+      "period": "May 2026",
+      "amount_inr": 216.56,
+      "due_date": "2026-05-15",
+      "paid_date": "2026-05-20",
+      "on_time": true,
+      "confidence": 0.895
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "BSPHCL",
+      "period": "Jun 2026",
+      "amount_inr": 234.98,
+      "due_date": "2026-06-15",
+      "paid_date": "2026-06-12",
+      "on_time": true,
+      "confidence": 0.845
+    },
+    {
+      "type": "electricity_bill",
+      "biller": "BSPHCL",
+      "period": "Jul 2026",
+      "amount_inr": 237.2,
+      "due_date": "2026-07-15",
+      "paid_date": "2026-07-16",
+      "on_time": true,
+      "confidence": 0.901
+    }
+  ],
+  "upi_events": [
+    {
+      "date": "2026-05-24",
+      "amount_inr": 664.15,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-01",
+      "amount_inr": 499.83,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-05-01",
+      "amount_inr": 541.66,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-05",
+      "amount_inr": 544.81,
+      "merchant": "Village kirana",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-26",
+      "amount_inr": 576.39,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-27",
+      "amount_inr": 112.78,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-26",
+      "amount_inr": 335.5,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-12",
+      "amount_inr": 50,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-19",
+      "amount_inr": 50,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-22",
+      "amount_inr": 375.04,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-06-21",
+      "amount_inr": 546.47,
+      "merchant": "Village kirana",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-27",
+      "amount_inr": 184.59,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-24",
+      "amount_inr": 267.0,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-15",
+      "amount_inr": 136.77,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-07-06",
+      "amount_inr": 203.83,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-12",
+      "amount_inr": 316.38,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-05",
+      "amount_inr": 339.22,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-18",
+      "amount_inr": 495.54,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-08-23",
+      "amount_inr": 50,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-03",
+      "amount_inr": 200.06,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-13",
+      "amount_inr": 90.56,
+      "merchant": "Village kirana",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-09-24",
+      "amount_inr": 50,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-26",
+      "amount_inr": 445.88,
+      "merchant": "UPI transfer",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-21",
+      "amount_inr": 376.69,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-28",
+      "amount_inr": 449.87,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-25",
+      "amount_inr": 506.85,
+      "merchant": "Jan Dhan ATM",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-12",
+      "amount_inr": 452.58,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-23",
+      "amount_inr": 687.65,
+      "merchant": "Mobile recharge",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-20",
+      "amount_inr": 328.82,
+      "merchant": "Village kirana",
+      "type": "upi_debit"
+    },
+    {
+      "date": "2026-10-19",
+      "amount_inr": 227.66,
+      "merchant": "Village kirana",
+      "type": "upi_debit"
+    }
+  ],
+  "features": {
+    "payment_consistency": 0.5,
+    "income_stability": 0.3,
+    "spending_discipline": 0.55,
+    "digital_footprint": 0.18,
+    "rental_reliability": 0.0,
+    "pay_streak": 0.5,
+    "avg_pay_ratio": 0.9,
+    "bill_variance": 0.12,
+    "inflow_regularity": 0.38,
+    "max_pay_gap": 0.1,
+    "limit_utilization": 0.35,
+    "months_data": 0.5
+  },
+  "expected_band": "Poor"
+}

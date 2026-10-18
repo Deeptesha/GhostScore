@@ -1,0 +1,16 @@
+# Environments / tooling
+.venv/
+.bob/
+.shots/
+.pytest_cache/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+
+# Design-export leftovers
+*.bak
+frontend/stitch/**/screen.png
+
+# Scratch copy of model artifacts (the canonical ones live in ml/artifacts/)
+backend/ml/

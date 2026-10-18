@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+# Pinned: model.joblib was pickled with scikit-learn 1.6.1
+scikit-learn==1.6.1
+pandas>=2.0
+numpy>=1.25
+pydantic>=2.0
+python-multipart
+httpx
+joblib

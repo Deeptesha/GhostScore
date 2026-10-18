@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9f8;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeed", "surface-container-highest": "#e2e2e2", "secondary": "#855300", "surface-tint": "#1a6962", "tertiary-fixed": "#cde5ff", "on-tertiary-container": "#a4d3ff", "inverse-on-surface": "#f1f1f0", "on-primary-fixed-variant": "#00504a", "on-secondary": "#ffffff", "on-surface": "#1a1c1c", "on-primary-container": "#93dbd2", "surface-bright": "#f9f9f8", "surface-container-high": "#e8e8e7", "primary-container": "#0e625b", "outline": "#6f7977", "on-secondary-fixed-variant": "#653e00", "on-tertiary-fixed": "#001d32", "surface-variant": "#e2e2e2", "surface-dim": "#dadad9", "primary-fixed-dim": "#8cd4ca", "primary": "#004943", "primary-fixed": "#a7f0e6", "secondary-fixed-dim": "#ffb95f", "outline-variant": "#bec9c6", "background": "#f9f9f8", "on-tertiary": "#ffffff", "on-primary": "#ffffff", "on-secondary-container": "#684000", "secondary-fixed": "#ffddb8", "inverse-primary": "#8cd4ca", "error-container": "#ffdad6", "on-primary-fixed": "#00201d", "inverse-surface": "#2f3130", "tertiary": "#00446a", "secondary-container": "#fea619", "error": "#ba1a1a", "surface-container-low": "#f3f4f3", "on-error-container": "#93000a", "surface": "#f9f9f8", "on-tertiary-fixed-variant": "#004b74", "on-error": "#ffffff", "on-surface-variant": "#3f4947", "on-background": "#1a1c1c", "tertiary-fixed-dim": "#94ccff", "surface-container-lowest": "#ffffff", "tertiary-container": "#005c8e", "on-secondary-fixed": "#2a1700" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin-desktop": "2rem", "gutter": "1rem" }, fontFamily: { "body-sm": ["Noto Sans"], "headline-lg": ["Noto Sans"], "headline-md": ["Noto Sans"], "label-sm": ["Noto Sans"], "headline-lg-mobile": ["Noto Sans"], "display": ["Noto Sans"], "label-md": ["Noto Sans"], "body-md": ["Noto Sans"], "headline-sm": ["Noto Sans"], "body-lg": ["Noto Sans"], "label-lg": ["Noto Sans"] }, fontSize: { "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "display": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["19px", { "lineHeight": "26px", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm max-w-[480px] mx-auto w-full"><div class="flex items-center gap-space-xs"><img alt="GhostScore Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKzZ97K3KSf__xD8JTqjVf0xJEW62_ZRyI1p8LkO3nuM4RpbV4j2g2q7woMwwUUIy12lU65K2CGQO9hDiqtFWMGeLTBaSsmgdpHBHHFkW3E35tW7hrTT4BVTMpkuZe3w5h-icpXTPfb13m4AxTasf-jnu1igW7nipiYLaIx5r7rXXzqENHDWl2nXBhas7khbGCKAthdQc2UddDzU_mAp8ETqeBbUm_FbJPFQ-uIs-w9FTsGhuRw65Elw"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none">GhostScore</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium leading-tight">Home</span></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center bg-surface-container-low rounded-full p-0.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><button class="h-7 px-2.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center transition-colors">EN</button><button class="h-7 px-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors">हिं</button><button class="h-7 px-2 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center justify-center transition-colors">म</button></div><a class="relative flex items-center justify-center min-w-[44px] min-h-[44px] rounded-full" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2Kj4noeuYaC1M6a_KvWX0SU2vqf7sAJW--j8fONEqyqOPx1xk7DpZnE4sxifM2p2VMWGWiexjQqiuc9G9y2xRbJrraYvGhAhOT0doRbaXJG8KELtkIyw8akg0q2pVxpcOYhXrRaxE0Rluh_47liWYSU7YxKkHK0wGQ843W0EI5tABsooywhmf8D5NkhImgCf75s_lxU3r7rNWDjQK5A4gxUdF2UTy2LmPP8nXPybzFxCRnBblPuc7Qg"><span class="absolute bottom-1 right-1 w-2.5 h-2.5 bg-secondary-container rounded-full ring-2 ring-surface"></span></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface max-w-[480px] mx-auto"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Greeting & Reassurance Banner -->
+<div class="flex flex-col gap-space-xs mt-space-md mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary-fixed text-primary text-[14px]">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</span>
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wide uppercase">Pre-Assessed Match</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">Loan Options for You</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Based on your verified GhostScore of <span class="font-bold text-primary">648</span> and 4 months of steady QR payment collections.
+    </p>
+</div>
+<!-- Reassurance / Trust Banner -->
+<div class="flex items-center gap-space-sm p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex-shrink-0 w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">format_image_left</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">100% Safe to Explore</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Checking offers here will never affect your credit profile or CIBIL score.</span>
+</div>
+</div>
+<!-- Section 1: Available Options -->
+<div class="flex flex-col gap-space-md mt-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Available Options</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">2 ready</span>
+</div>
+<!-- Product Card 1: PM SVANidhi -->
+<div class="relative flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<!-- Status Badge & Category -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> May be eligible
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Govt. Scheme</span>
+</div>
+<!-- Title & Ministry Tag -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">PM SVANidhi Street Vendor Loan</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tranche 2 • Working capital for micro-merchants</p>
+<!-- Amount Highlight -->
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimated Credit Range</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">₹20,000 – ₹50,000</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-[#15803D]">
+<span class="material-symbols-outlined text-[16px]">trending_down</span>
+<span class="font-label-sm text-label-sm font-bold">7% interest subsidy per year</span>
+</div>
+</div>
+<!-- Plain language highlights -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">task_alt</span>
+<span class="font-body-sm text-body-sm text-on-surface">No collateral, property paper, or guarantor required.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">payments</span>
+<span class="font-body-sm text-body-sm text-on-surface">Pay back in relaxed daily or weekly UPI instalments.</span>
+</div>
+</div>
+<!-- Source reference modal trigger -->
+<div class="flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm mb-space-md">
+<span class="truncate max-w-[240px]">Source: MoHUA Guidelines 2024</span>
+<button class="text-primary font-bold hover:underline flex items-center gap-0.5" onclick="document.getElementById('source-modal-1').classList.remove('hidden')" type="button">
+<span>See source</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+<!-- Final disclaimer -->
+<p class="font-label-sm text-label-sm text-on-surface-variant italic mb-space-md leading-tight">
+        * Final approval and loan disbursement are completed directly by the partner bank.
+      </p>
+<!-- CTA -->
+<button class="w-full min-h-[52px] rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs shadow-sm hover:opacity-95 active:scale-[0.99] transition-all" type="button">
+<span>Check Eligibility with Partner Banks</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- Product Card 2: Micro-Enterprise Loan -->
+<div class="relative flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<!-- Status Badge & Category -->
+<div class="flex items-center justify-between mb-space-xs">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">check</span> May be eligible
+        </span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">NBFC Partner</span>
+</div>
+<!-- Title & Partner Tag -->
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Micro-Enterprise Working Capital</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kinara Capital &amp; Aye Finance Network</p>
+<!-- Amount Highlight -->
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Approved Upper Limit (50% Monthly QR Turnover)</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary">₹35,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">flexible drawdown</span>
+</div>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span class="font-label-sm text-label-sm font-semibold">Direct transfer to linked UPI bank in 24 hours</span>
+</div>
+</div>
+<!-- Plain language highlights -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">account_balance_wallet</span>
+<span class="font-body-sm text-body-sm text-on-surface">Calculated transparently from your verified UPI vendor ledger.</span>
+</div>
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">calendar_month</span>
+<span class="font-body-sm text-body-sm text-on-surface">Custom tenures from 3 to 9 months with zero foreclosure penalty.</span>
+</div>
+</div>
+<!-- Source reference modal trigger -->
+<div class="flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm mb-space-md">
+<span class="truncate max-w-[240px]">Source: NBFC Micro-Enterprise Policy V3.1</span>
+<button class="text-primary font-bold hover:underline flex items-center gap-0.5" onclick="document.getElementById('source-modal-2').classList.remove('hidden')" type="button">
+<span>See source</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</button>
+</div>
+<!-- Final disclaimer -->
+<p class="font-label-sm text-label-sm text-on-surface-variant italic mb-space-md leading-tight">
+        * Final terms and sanction letter issued by the lending institution upon identity re-check.
+      </p>
+<!-- CTA -->
+<button class="w-full min-h-[52px] rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs hover:bg-surface-container-highest transition-colors" type="button">
+<span>View Terms &amp; Repayment Schedule</span>
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</button>
+</div>
+</div>
+<!-- Section 2: Cannot Confirm (Missing Information) -->
+<div class="flex flex-col gap-space-sm mt-space-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-outline text-[20px]">help_outline</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cannot Confirm Yet</h2>
+</div>
+<div class="rounded-xl bg-surface-container-low p-space-md flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold">2 products locked</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Require additional verification</span>
+</div>
+<!-- Locked Item 1 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Commercial Two-Wheeler Finance</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">₹75,000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="text-error font-semibold">Missing:</span> Requires valid Commercial Driver's License &amp; 12 continuous months of digital UPI transaction history.
+        </p>
+</div>
+<!-- Locked Item 2 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Unsecured Shop Credit Line</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">₹1,00,000</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+<span class="text-error font-semibold">Missing:</span> Requires formal Shop Establishment Certificate (Gumasta license / Udyam registration).
+        </p>
+</div>
+<!-- Motivational Nudge -->
+<div class="flex items-center justify-between pt-space-xs">
+<p class="font-body-sm text-body-sm text-on-surface leading-tight pr-2">
+          Upload these 2 missing documents anytime to unlock these larger limits.
+        </p>
+<button class="flex-shrink-0 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center gap-1 shadow-sm" type="button">
+<span>Upload</span>
+<span class="material-symbols-outlined text-[16px]">upload_file</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Educational Trust Card -->
+<div class="mt-space-lg p-space-md rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-secondary mt-0.5">lightbulb</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Why do we show sources?</span>
+<p class="font-body-sm text-body-sm leading-snug mt-0.5">
+        We never inflate loan promises. Every figure shown above comes straight from active bank rules and government gazettes, backed by your actual passbook and UPI records.
+      </p>
+</div>
+</div>
+<!-- Persistent Compliance Footer -->
+<div class="mt-space-lg mb-space-md p-space-md rounded-xl bg-surface-container flex flex-col gap-1 text-center">
+<div class="flex items-center justify-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wide">Regulatory Integrity</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-relaxed">
+      GhostScore is an alternative credit assessment platform, not a direct lender. All credit assessments, sanctions, and loan disbursements are governed and executed exclusively by RBI-regulated partner Scheduled Commercial Banks and NBFCs.
+    </p>
+</div>
+</div>
+<!-- Source Drawer / Modal 1 -->
+<div class="fixed inset-0 z-50 hidden bg-[rgba(11,27,25,0.60)] flex items-end justify-center" id="source-modal-1">
+<div class="w-full max-w-[480px] bg-surface-container-lowest rounded-t-2xl p-space-lg flex flex-col gap-space-md animate-in slide-in-from-bottom">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Official Policy Reference</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="document.getElementById('source-modal-1').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Document Source</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Ministry of Housing &amp; Urban Affairs (MoHUA) Guidelines 2024</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Under Scheme Code SVANidhi-2024 (Section 4.2), vendors completing Tranche 1 on-time are qualified for 100% digital sanction of ₹20,000 to ₹50,000 with Central Government 7% interest subvention directly credited via DBT.
+      </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+      Verified on GhostScore Partner Gateway: 02 May 2025
+    </div>
+<button class="w-full min-h-[52px] rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold" onclick="document.getElementById('source-modal-1').classList.add('hidden')" type="button">
+      Got it, close
+    </button>
+</div>
+</div>
+<!-- Source Drawer / Modal 2 -->
+<div class="fixed inset-0 z-50 hidden bg-[rgba(11,27,25,0.60)] flex items-end justify-center" id="source-modal-2">
+<div class="w-full max-w-[480px] bg-surface-container-lowest rounded-t-2xl p-space-lg flex flex-col gap-space-md animate-in slide-in-from-bottom">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">NBFC Credit Underwriting Policy</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="document.getElementById('source-modal-2').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Policy Matrix</span>
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Micro-Enterprise Policy V3.1 (Cashflow Backed)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Lenders calculate working credit cap at 50% of the median monthly incoming volume verified across 90 continuous days on BharatPe, Google Pay, or Paytm Soundbox terminals.
+      </p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+      Registered Under RBI Non-Banking Lending Norms
+    </div>
+<button class="w-full min-h-[52px] rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold" onclick="document.getElementById('source-modal-2').classList.add('hidden')" type="button">
+      Understood, return
+    </button>
+</div>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_8px_rgba(11,79,74,0.05)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs max-w-[480px] mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-space-xs transition-colors text-primary font-bold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors relative" data-path="documents" href="#"><span class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="absolute -top-0.5 -right-1 w-2 h-2 bg-secondary-container rounded-full"></span></span><span class="font-label-sm text-label-sm">Documents</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="score" href="#"><span class="material-symbols-outlined text-[24px]">speed</span><span class="font-label-sm text-label-sm">Score</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] min-h-[48px] px-space-xs text-on-surface-variant transition-colors" data-path="advisor" href="#"><span class="material-symbols-outlined text-[24px]">support_agent</span><span class="font-label-sm text-label-sm">Advisor</span></a></div></nav><script src="../../../api-client.js"></script></body></html>
