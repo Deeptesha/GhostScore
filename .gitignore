@@ -14,3 +14,7 @@ frontend/stitch/**/screen.png
 
 # Scratch copy of model artifacts (the canonical ones live in ml/artifacts/)
 backend/ml/
+
+# Demo video and its generator stay local (the video is on YouTube)
+*.mp4
+docs/video/

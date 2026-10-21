@@ -16,7 +16,15 @@
 
 <img src="docs/screenshots/d_dash_en.png" alt="GhostScore desktop dashboard: Priya scores 675, Good band" width="860">
 
-<sub>Desktop dashboard in local stub mode. Priya is a <b>synthetic</b> persona; every number comes from the demo model.</sub>
+<sub>Desktop dashboard in stub mode. Priya is a <b>synthetic</b> persona; every number comes from the demo model.</sub>
+
+### 🔗 Links
+
+| | |
+|---|---|
+| 🚀 **Live app (Cloud Run)** | <https://ghostscore-385967748557.us-central1.run.app> |
+| 🎬 **Demo video (3 min)** | <https://youtu.be/3K804mlLN6I> |
+| 💻 **GitHub repository** | <https://github.com/Deeptesha/GhostScore> |
 
 </div>
 
@@ -24,7 +32,7 @@
 
 ## Contents
 
-[The problem](#-the-problem) · [What it does](#-what-it-does) · [Screens](#-screens) · [Architecture](#-architecture) · [Google Cloud services](#-google-cloud-services-88-in-the-design) · [Quick start](#-quick-start-local-no-gcp-needed) · [Docker and Cloud Run](#-docker-and-cloud-run) · [Demo walkthrough](#-demo-walkthrough-priya) · [API](#-api) · [Tests](#-tests) · [Layouts and languages](#-layouts-and-languages) · [Honest limitations](#-honest-limitations) · [Stubbed vs real](#-what-is-stubbed-vs-real) · [Project structure](#-project-structure) · [Data sources](#-data-sources-consulted)
+[The problem](#-the-problem) · [What it does](#-what-it-does) · [Screens](#-screens) · [Architecture](#-architecture) · [Google Cloud services](#-google-cloud-services-88-in-the-design) · [Try it](#-try-it) · [Cloud Run deployment](#️-cloud-run-deployment) · [Demo walkthrough](#-demo-walkthrough-priya) · [API](#-api) · [Tests](#-tests) · [Layouts and languages](#-layouts-and-languages) · [Honest limitations](#-honest-limitations) · [Stubbed vs real](#-what-is-stubbed-vs-real) · [Project structure](#-project-structure) · [Data sources](#-data-sources-consulted)
 
 ---
 
@@ -36,7 +44,7 @@ Hundreds of millions of people in India pay rent, electricity and mobile bills o
 
 | | Feature | How |
 |---|---|---|
-| 📄 | **Reads payment documents** | Electricity bill, rent receipt, mobile recharge / UPI statement go through a Document AI step (stubbed locally). |
+| 📄 | **Reads payment documents** | Electricity bill, rent receipt, mobile recharge / UPI statement go through a Document AI step (stubbed). |
 | 🔍 | **Intake check** | A verifier prompt (P1) flags unreadable or inconsistent fields before scoring. |
 | 📊 | **Scores with a real model** | A scikit-learn gradient-boosting pipeline gives a 300-850 score and a band: Building, Fair, Good, Excellent. |
 | 🧠 | **Explains in plain words** | Top signals the model leans on most and least, in everyday language. |
@@ -102,49 +110,44 @@ flowchart LR
 
 | Service | Role | Status in this repo |
 |---|---|---|
-| **Gemini on Vertex AI** | Prompt chain P1-P7 | ⚙ Stubbed locally. GCP code written, never run. |
-| **Vertex AI** | Credit band prediction and what-if re-scores | ⚙ Stubbed locally (sklearn model stands in). |
+| **Gemini on Vertex AI** | Prompt chain P1-P7 | ⚙ Stubbed. GCP code written, never run. |
+| **Vertex AI** | Credit band prediction and what-if re-scores | ⚙ Stubbed (sklearn model stands in). |
 | **BigQuery** | Feature SQL, feature store, audit log | SQL in [`sql/`](sql/). Not executed. |
-| **Document AI** | Parse bills, receipts, statements | ⚙ Stubbed locally. |
-| **Vertex AI Search** | Policy and loan-product retrieval | ⚙ Stubbed locally (5 hardcoded passages). |
-| **Cloud Run** | API and frontend hosting | [`Dockerfile`](Dockerfile) and [`infra/deploy.sh`](infra/deploy.sh) ready. See [deploy](#-docker-and-cloud-run). |
-| **Cloud SQL** | Profiles, score history | In-memory locally. |
-| **Pub/Sub** | Score events for continuous scoring | ⚙ Stubbed locally (console log). |
+| **Document AI** | Parse bills, receipts, statements | ⚙ Stubbed. |
+| **Vertex AI Search** | Policy and loan-product retrieval | ⚙ Stubbed (5 hardcoded passages). |
+| **Cloud Run** | API and frontend hosting | ✅ **Deployed** (stub mode). [Live app](https://ghostscore-385967748557.us-central1.run.app). See [deployment](#️-cloud-run-deployment). |
+| **Cloud SQL** | Profiles, score history | In-memory. |
+| **Pub/Sub** | Score events for continuous scoring | ⚙ Stubbed (console log). |
 
-Local mode prints `⚙ STUB` for every simulated call. **Nothing in this repo has been verified against live Google Cloud services.**
+Stub mode prints `⚙ STUB` for every simulated call. **Only Cloud Run is a live Google Cloud service in the deployed app; the other seven are simulated, and their GCP-mode code has never been run.**
 
-## 🚀 Quick start (local, no GCP needed)
+## 🚀 Try it
+
+Open the live app: <https://ghostscore-385967748557.us-central1.run.app>
+
+| Path | What |
+|---|---|
+| `/` | Redirects to the app's welcome screen |
+| `/docs` | Interactive API docs |
+| `/health` | Liveness and mode (`{"status":"ok","mode":"local"}` means stub mode) |
+
+To run your own copy from source:
 
 ```bash
-cd ghostscore/
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r backend/requirements.txt
 
 python ml/train.py                  # optional: model.joblib is already committed
 python data/personas/generate.py    # optional: synthetic personas
 
-GHOSTSCORE_MODE=local uvicorn main:app --app-dir backend --port 8000 --reload
+GHOSTSCORE_MODE=local uvicorn main:app --app-dir backend --port 8000
 ```
 
-| URL | What |
-|---|---|
-| <http://localhost:8000/> | Redirects to the app's welcome screen |
-| <http://localhost:8000/docs> | Interactive API docs |
-| <http://localhost:8000/health> | `{"status":"ok","mode":"local"}` |
+## ☁️ Cloud Run deployment
 
-## 🐳 Docker and Cloud Run
+The root [`Dockerfile`](Dockerfile) packages `backend/`, `frontend/` and `ml/artifacts/` and runs in **stub mode** (`GHOSTSCORE_MODE=local`) by default, so a deployment needs no extra Google Cloud setup. The live app above was deployed this way.
 
-The root [`Dockerfile`](Dockerfile) packages `backend/`, `frontend/` and `ml/artifacts/` and runs in **local stub mode** by default, so a deployment needs no extra Google Cloud setup.
-
-**Run the container locally** (needs Docker):
-
-```bash
-docker build -t ghostscore .
-docker run --rm -p 8080:8080 ghostscore
-# open http://localhost:8080/
-```
-
-**Deploy to Cloud Run** (run in [Cloud Shell](https://shell.cloud.google.com), which has `gcloud` and Cloud Build, so no local Docker is needed):
+**Deploy your own** (run in [Cloud Shell](https://shell.cloud.google.com), which has `gcloud` and Cloud Build, so no local Docker is needed):
 
 ```bash
 git clone https://github.com/Deeptesha/GhostScore.git && cd GhostScore
@@ -193,12 +196,14 @@ A narrated 3-minute script is in [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) an
 `?language=en|hi|mr` localises the generated text of `/score`, `/score/latest`, `/plan`, `/options`, `/chat` and the document review message.
 
 ```bash
+URL=https://ghostscore-385967748557.us-central1.run.app
+
 # Upload, then score
-curl -X POST localhost:8000/documents -F "file=@any_file.pdf" -F doc_type=electricity_bill -F user_id=priya
-curl -X POST localhost:8000/score -H "Content-Type: application/json" \
+curl -X POST $URL/documents -F "file=@any_file.pdf" -F doc_type=electricity_bill -F user_id=priya
+curl -X POST $URL/score -H "Content-Type: application/json" \
   -d '{"user_id":"priya","doc_ids":["<DOC_ID>"],"language":"en"}'
-curl "localhost:8000/plan?user_id=priya"
-curl -X POST localhost:8000/chat -H "Content-Type: application/json" \
+curl "$URL/plan?user_id=priya"
+curl -X POST $URL/chat -H "Content-Type: application/json" \
   -d '{"user_id":"priya","message":"What is my score?","language":"en"}'
 ```
 
@@ -210,7 +215,7 @@ GHOSTSCORE_MODE=local PYTHONPATH=backend .venv/bin/python -m pytest tests/ -v
 
 **28 tests** cover every endpoint, the check that plan figures come from the what-if re-score, the Priya end-to-end flow, and Hindi/Marathi localisation (numbers and IDs unchanged). They run against local stubs only.
 
-Browser tests (real Chrome via Playwright; start the server first on port 8000 in local mode):
+Browser tests (real Chrome via Playwright; they expect the app running from source in stub mode, see "Try it"):
 
 ```bash
 .venv/bin/python tests/e2e_ui.py        # English click-through of the Priya flow
@@ -269,7 +274,7 @@ Browser tests (real Chrome via Playwright; start the server first on port 8000 i
 
 ```
 ghostscore/
-├── Dockerfile                    # Cloud Run / container image (local stub mode by default)
+├── Dockerfile                    # Cloud Run / container image (stub mode by default)
 ├── .dockerignore
 ├── backend/
 │   ├── main.py                   # FastAPI entry point, serves /ui and redirects /
@@ -309,4 +314,4 @@ ghostscore/
 
 ---
 
-<div align="center"><sub>Hackathon demo build. Synthetic personas only. Not a lender, not a registered aggregator.<br>Made with IBM Bob.</sub></div>
+<div align="center"><sub>Hackathon demo build. Synthetic personas only. Not a lender, not a registered aggregator.</sub></div>
