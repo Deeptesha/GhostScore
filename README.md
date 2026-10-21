@@ -309,4 +309,4 @@ ghostscore/
 
 ---
 
-<div align="center"><sub>Hackathon demo build. Synthetic personas only. Not a lender, not a registered aggregator.<br>Made with IBM Bob.</sub></div>
+<div align="center"><sub>Hackathon demo build. Synthetic personas only. Not a lender, not a registered aggregator.
